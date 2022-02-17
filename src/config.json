@@ -1,0 +1,16 @@
+{
+	"module" : "KafkaNodeKeeper",
+	"language": "java",
+	"version": "0.0.1",
+	"broker_servers": [
+		{
+			"host": "localhost",
+			"port": "9092"
+
+		}
+	],
+	"solvers": [
+		{"solver": "random-b", "topic": ["random-a"]},
+		{"solver": "random-a", "topic": ["random-b"]}
+	]
+}
